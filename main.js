@@ -48,17 +48,17 @@ login.addEventListener('click', function(e) {
         .then(res => res.json())
         .then(res => {
             if (res.success) {
-                window.location.href = "control.html";
+                window.location.href = "category.html";
             } else {
-                alert("Error: Invalid credentials");
+                alert(" Hisob maʼlumotlari notoʻgʻri");
             }
         })
         .catch(err => {
             console.error(err);
-            alert("Error: Unable to process request");
+            alert(" So‘rovni qayta ishlash imkonsiz");
         });
     } else {
-        alert("Error: Invalid phone number or password");
+        alert(" Telefon raqami yoki parol noto‘g‘ri");
     }
 });
 function validatePhoneNumber(phoneNumber) {
